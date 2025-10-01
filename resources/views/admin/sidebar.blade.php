@@ -130,7 +130,7 @@
                             <ul>
                                 <li class="submenu">
                                     <a href="javascript:void(0);">
-                                        <i class="ti ti-user-plus"></i><span>Lab TEST</span>
+                                        <i class="ti ti-user-plus"></i><span>Lab Test</span>
                                         <span class="menu-arrow"></span>
                                     </a>
                                     <ul>
