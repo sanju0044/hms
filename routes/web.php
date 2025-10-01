@@ -99,6 +99,13 @@ Route::get('test-name', function () {
     return view('lab.test-name');
 });
 
+Route::get('create-report', function () {
+    return view('lab.create-report');
+});
+
+Route::get('report-list', function () {
+    return view('lab.report-list');
+});
 #leb test
 Route::middleware([
     'auth:sanctum',

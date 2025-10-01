@@ -59,4 +59,11 @@
     <!-- Main JS -->
     <script src="assets/js/script.js" type="text/javascript"></script>
 
-<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49" defer></script>
+    <script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="|49" defer></script>
+
+     <!-- Datatable JS -->
+    <script src="assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/dataTables.bootstrap5.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/theme-script.js" type="text/javascript"></script>

@@ -109,7 +109,7 @@
                             <a href="appointment-calendar.html" class="bg-white rounded p-1 d-flex align-items-center justify-content-center"> <i class="ti ti-calendar-event fs-14 text-body"></i> </a>
                         </div>
 
-                        <a href="new-appointment.html" class="btn btn-primary ms-2 fs-13 btn-md" data-bs-toggle="modal" data-bs-target="#add_modal"><i class="ti ti-plus me-1"></i> New Appointment </a>
+                        <a href="new-appointment.html" class="btn btn-primary ms-2 fs-13 btn-md"><i class="ti ti-plus me-1"></i> New Appointment </a>
                     </div>
 				</div>
 				<!-- End Page Header -->
@@ -498,7 +498,9 @@
                     <table class="table datatable table-nowrap">
                         <thead class="">
                             <tr>
-                                <th class="no-sort">Date & Time</th>
+                                <th class="no-sort">
+                                    Date & Time
+                                </th>
                                 <th>Patient</th>
                                 <th>Doctor</th>
                                 <th>Mode</th>
@@ -960,138 +962,112 @@
     </div>
     <!-- End Wrapper -->
 
-    <!-- Start Add Modal -->
-        <div id="add_modal" class="modal fade">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="fw-bold modal-title">New Appointment</h5>
-                        <button type="button" class="btn-close btn-close-modal custom-btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="ti ti-x"></i></button>
+    <!-- Start View Details -->
+    <div class="offcanvas offcanvas-offset offcanvas-end" tabindex="-1" id="view_details">
+        <div class="offcanvas-header d-block pb-0 px-0">
+            <div class="border-bottom d-flex align-items-center justify-content-between pb-3 px-3">
+                <h5 class="offcanvas-title fs-18 fw-bold">Appointment Details <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium ms-2">#AP544658</span></h5>
+                <button type="button" class="btn-close custom-btn-close opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>            </div>
+        </div>
+        <div class="offcanvas-body pt-0 px-0">
+            <h6 class="bg-light py-2 px-3 fw-bold"> When & Where </h6>
+            <div class="px-3 my-4">
+                <div class="bg-light p-3 mb-3 border rounded-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                            <img src="assets/img/doctors/doctor-03.jpg" alt="product" class="rounded-circle">
+                        </a>
+                        <a href="javascript:void(0);" class="text-dark fw-semibold">Dr. Emily Carter <span class="text-body fs-13 fw-normal d-block">Pediatrician </span>  </a>
                     </div>
-                    <form action="staffs.html">
-                        <div class="modal-body">
-                            <!-- start row -->
-                            <div class="form">
-                                    <div class="mb-3">
-                                        <label class="form-label mb-1 fw-medium">Appointment ID<span class="text-danger ms-1">*</span></label>
-                                        <input type="text" class="form-control" value="AP234354" disabled>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <div class="d-flex align-items-center justify-content-between mb-1">
-                                                    <label class="form-label mb-0 fw-medium">Patient<span class="text-danger ms-1">*</span></label>
-                                                </div>
-                                                <select class="select form-control" >
-                                                    <option value="m-1">Select</option>
-                                                    <option value="m-2">Alberto Ripley</option>
-                                                    <option value="m-3">Susan Babin</option>
-                                                    <option value="m-4">Martin Lisa</option>
-                                                    <option value="m-5">Stella Mary</option>
-                                                    <option value="m-6">Carol Lam</option>
-                                                    <option value="m-7">Jesus Adams</option>
-                                                    <option value="m-8">Ezra Belcher</option>
-                                                    <option value="m-9">Unit Manager</option>
-                                                    <option value="m-10">Bernard Griffith</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label mb-1 fw-medium">Department<span class="text-danger ms-1">*</span></label>
-                                                <select class="select form-control">
-                                                    <option value="m-1">Select</option>
-                                                    <option value="m-2">General Medicine</option>
-                                                    <option value="m-3">Pediatrics</option>
-                                                    <option value="m-4">Gynecology</option>
-                                                    <option value="m-5">Cardiology</option>
-                                                    <option value="m-6">Orthopedics</option>
-                                                    <option value="m-7">Dermatology</option>
-                                                    <option value="m-8">ENT</option>
-                                                    <option value="m-9">Neurology</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label mb-1 fw-medium">Doctor<span class="text-danger ms-1">*</span></label>
-                                                <select class="select form-control">
-                                                    <option value="m-1">Select</option>
-                                                    <option value="m-2">Dr. Mick Thompson</option>
-                                                    <option value="m-3">Dr. Sarah Johnson</option>
-                                                    <option value="m-4">Dr. Emily Carter</option>
-                                                    <option value="m-5">Dr. David Lee</option>
-                                                    <option value="m-6">Dr. Anna Kim</option>
-                                                    <option value="m-7">Dr. John Smith</option>
-                                                    <option value="m-8">Dr. Lisa White</option>
-                                                    <option value="m-9">Dr. Patrica Brown</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label mb-1 fw-medium">Appointment Type<span class="text-danger ms-1">*</span></label>
-                                                <select class="select form-control">
-                                                    <option value="m-1">Select</option>
-                                                    <option value="m-2">In Person</option>
-                                                    <option value="m-3">Online</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label mb-1 fw-medium">Date of Appointment<span class="text-danger ms-1">*</span></label>
-                                                <div class="input-icon-end position-relative">
-                                                    <input type="text" class="form-control datetimepicker" placeholder="dd/mm/yyyy" value="dd/mm/yyyy">
-                                                    <span class="input-icon-addon">
-                                                        <i class="ti ti-calendar"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label mb-1 fw-medium">Time<span class="text-danger ms-1">*</span></label>
-                                                <div class="input-icon-end position-relative">
-                                                    <input type="text" class="form-control timepicker">
-                                                    <span class="input-icon-addon">
-                                                        <i class="ti ti-clock text-gray-7"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label mb-1 fw-medium">Appointment Reason<span class="text-danger ms-1">*</span></label>
-                                        <textarea class="form-control" rows="3"></textarea>
-                                    </div>
-                                    <div class="mb-0">
-                                        <label class="form-label mb-1 fw-medium">Status<span class="text-danger ms-1">*</span></label>
-                                        <select class="select form-control">
-                                            <option value="m-1">Select</option>
-                                            <option value="m-2">Checked Out</option>
-                                            <option value="m-3">Checked In</option>
-                                            <option value="m-4">Cancelled</option>
-                                            <option value="m-5">Schedule</option>
-                                            <option value="m-6">Confirmed</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            <!-- end row -->
+                    <div class="flex-shrink-0">
+                        <a href="javascript:void(0);" class="btn btn-outline-white bg-white fs-14 d-inline-flex border rounded-2 p-1 me-1">
+                            <i class="ti ti-brand-hipchat"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="btn btn-outline-white bg-white shadow-sm fs-14 d-inline-flex border rounded-2 p-1 me-1">
+                            <i class="ti ti-video"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"> Appointment On <span class="text-body fw-normal"> Saturday, 25 Apr 2025  </span> </p>
+                <p class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"> Time <span class="text-body fw-normal"> 09:00 AM - 11:00 AM  </span> </p>
+                <p class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"> Location <span class="text-body fw-normal">Newyork , USA   </span> </p>
+                <p class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"> Appointment Type <span class="text-body fw-normal"> Online Consultation </span> </p>
+                <div class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"> Patient Details
+                    <div class="text-body fw-normal d-flex align-items-center">
+                        <div class="avatar avatar-xs flex-shrink-0">
+                            <img src="assets/img/users/avatar-2.jpg" alt="" class="rounded-circle me-1 flex-shrink-0">
                         </div>
-                        <div class="modal-footer d-flex align-items-center gap-1">
-                            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Add Staff</button>
-                        </div>
-                    </form>
+                            James Adrian
+                    </div>
                 </div>
             </div>
+            <h6 class="bg-light py-2 px-3 text-dark fw-bold"> Appointment Details  </h6>
+            <div class="px-3 my-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="d-flex align-items-center">
+                        Telehealth
+                        <label class="d-flex align-items-center form-switch ps-1">
+                            <input class="form-check-input m-0 me-2" type="checkbox" checked>
+                        </label>
+                    </div>
+                    <div>  <a href="appointment-consultations.html" class="btn-primary btn btn-sm rounded d-flex align-items-center"> <i class="ti ti-video me-1"></i> Start </a></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="text-dark"> Status </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="mb-3">
+                            <div class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle form-control rounded d-flex align-items-center justify-content-between border" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="true">
+                                    Pending
+                                </a>
+                                <div class="dropdown-menu shadow-lg w-100 dropdown-info">
+                                    <div class="mb-3">
+                                        <div class="input-icon-start position-relative">
+                                            <span class="input-icon-addon fs-12">
+                                                <i class="ti ti-search"></i>
+                                            </span>
+                                            <input type="text" class="form-control form-control-sm" placeholder="Select">
+                                        </div>
+                                    </div>
+                                    <ul class="mb-0 list-style-none">
+                                        <li>
+                                            <label class="dropdown-item px-2 d-flex align-items-center text-dark">
+                                                <input class="form-check-input m-0 me-2" type="checkbox">
+                                                Checked Out
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="dropdown-item px-2 d-flex align-items-center text-dark">
+                                                <input class="form-check-input m-0 me-2" type="checkbox" checked>
+                                                Checked In
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="dropdown-item px-2 d-flex align-items-center text-dark">
+                                                <input class="form-check-input m-0 me-2" type="checkbox">
+                                                Cancelled
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="dropdown-item px-2 d-flex align-items-center text-dark">
+                                                <input class="form-check-input m-0 me-2" type="checkbox">
+                                                Scheduled
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <!-- End Add Modal -->
+    </div>
+    <!-- End Add New Appointment-->
 
     <!-- Start Delete Modal  -->
     <div class="modal fade" id="delete_modal">

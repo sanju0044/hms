@@ -81,7 +81,6 @@
                                     </a>
                                     <ul>
                                         <li><a href="appointments">Appointments</a></li>
-                                        <li><a href="new-appointment">New Appointment</a></li>
                                     </ul>
                                 </li>
                                 <li class="submenu">
@@ -135,6 +134,8 @@
                                     </a>
                                     <ul>
                                         <li><a href="test-name">Test Name</a></li>
+                                        <li><a href="create-report">Create Report</a></li>
+                                        <li><a href="report-list">Report List</a></li>
                                     </ul>
                                 </li>
                             </ul>
