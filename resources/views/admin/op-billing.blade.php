@@ -510,6 +510,7 @@
                                 <th>Department</th>
                                 <th>Amount</th>
                                 <th>Mode Of Payment</th>
+                                <th>Remarks</th>
                                 <th>Status</th>
                                 <th></th>
                             </tr>
@@ -542,7 +543,8 @@
                                 <td>General</td>
                                 <td>1000</td>
                                 <td>Cash</td>
-                                <td> <span class="fs-13 badge badge-soft-info rounded text-info fw-medium">Checked Out</span> </td>
+                                <td>test</td>
+                                <td> <span class="fs-13 badge badge-soft-info rounded text-info fw-medium">Paid</span> </td>
                                 <td class="action-item">
                                     <a href="javascript:void(0);" data-bs-toggle="dropdown">
                                         <i class="ti ti-dots-vertical"></i>
@@ -677,9 +679,16 @@
                                     <label class="form-label mb-1 fw-medium">Status<span class="text-danger ms-1">*</span></label>
                                     <select class="select form-control">
                                         <option value="m-1">Select</option>
-                                        <option value="m-2">Available</option>
-                                        <option value="m-3">Unavailable</option>
+                                        <option value="m-2">Paid</option>
+                                        <option value="m-3">Unpaid</option>
+                                        <option value="m-3">Pending</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1 fw-medium">Remarks<span class="text-danger ms-1"></span></label>
+                                   <textarea class="form-control" placeholder="Enter Remarks"></textarea>
                                 </div>
                             </div>
                         </div>

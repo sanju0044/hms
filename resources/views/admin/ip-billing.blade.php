@@ -514,6 +514,7 @@
                                 <th>Refund</th>
                                 <th>Tolal Amount</th>
                                 <th>Mode Of Payment</th>
+                                <th>Remarks</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -550,6 +551,7 @@
                                 <td>100</td>
                                 <td>9000</td>
                                 <td>Online</td>
+                                <td>test</td>
                                 <td> <span class="fs-13 badge badge-soft-info rounded text-info fw-medium">Admitted</span> </td>
                                 <td class="action-item">
                                     <a href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -716,7 +718,13 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label mb-1 fw-medium">Remarks<span class="text-danger ms-1"></span></label>
+                                   <textarea class="form-control" placeholder="Enter Remarks"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
                                 <div class="mb-3">
                                     <label class="form-label mb-1 fw-medium">Status<span class="text-danger ms-1">*</span></label>
                                     <select class="select form-control">
