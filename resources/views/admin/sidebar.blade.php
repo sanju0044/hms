@@ -105,7 +105,7 @@
                                         <span class="menu-arrow"></span>
                                     </a>
                                     <ul>
-                                        <li><a href="op-billing">Add OP Billing</a></li>
+                                        <li><a href="op-billing">OP Billing</a></li>
                                     </ul>
                                 </li>
                             </ul>
